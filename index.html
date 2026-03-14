@@ -357,8 +357,8 @@
                 container.innerHTML = ''; // Clear loading text
 
                 repos.forEach(repo => {
-                    // Skip if it's a hidden or profile repository
-                    if (repo.name === "0P7-0U7" || repo.name === ".github") return;
+                    // Skip if it's a hidden, profile, or the website repository itself
+                    if (repo.name === "0P7-0U7" || repo.name === ".github" || repo.name === "o0-0o.eu") return;
 
                     let tagsHtml = '';
                     const tags = [];
